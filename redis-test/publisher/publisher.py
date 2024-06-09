@@ -3,7 +3,7 @@ from pydantic import BaseModel
 import redis
 
 app = FastAPI()
-r = redis.Redis(host='redis', port=6379)
+r = redis.Redis(host='localhost', port=6379)
 
 class Message(BaseModel):
     text: str
